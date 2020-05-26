@@ -1,0 +1,32 @@
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.alienBlue {
+    background-color: #007CC0;
+}
+
+.alienRed {
+    background-color: #CE181E;
+}
+
+.alienTeal {
+    background-color: #49C0B6;
+}
+
+.alienYellow {
+    background-color: #FFC20E;
+}
+
+.alienGold {
+    background-color: #ad8700;
+}
+
+.alienDarkGrey {
+    background-color: #222222;
+}
+
+.alienSilver {
+    background-color: #818181;
+}
