@@ -1,100 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/263979a508.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <title>Alien Boots</title>
-  </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50" id="slideShow" class="carousel slide" data-ride="carousel">
-    <nav class="navbar navbar-expand-sm alienDarkGrey navbar-dark fixed-top">
-      <img src="Images/AlienHeadWhite.png" width="70" height="40" />
-      <ul class="navbar-nav">
-        <li class="nav-item"> 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <script src="https://kit.fontawesome.com/263979a508.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <title>Alien Boots</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="slideShow" class="carousel slide"
+  data-ride="carousel">
+
+  <nav class="navbar navbar-expand-md alienDarkGrey bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#"><img src="Images/AlienHeadWhite.png" width="70" height="40" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar1">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
           <a class="nav-link" href="#section1">Holo Graph</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section2">Section 2</a>
+          <a class="nav-link" href="#section2">Specs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section3">Section 3</a>
+          <a class="nav-link" href="#section3">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section4">Section 4</a>
+          <a class="nav-link" href="#section4">Information</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#section5">Section 5</a>
         </li>
       </ul>
-    </nav>
+    </div>
+  </nav>
 
-    <div id="slideShow" class="carousel slide" data-ride="carousel">
-      <ul class="carousel-indicators">
-        <li data-target="#slideShow" data-slide-to="0" class="active"></li>
-        <li data-target="#slideShow" data-slide-to="1"></li>
-        <li data-target="#slideShow" data-slide-to="2"></li>
-      </ul>
+  <div id="slideShow" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#slideShow" data-slide-to="0" class="active"></li>
+      <li data-target="#slideShow" data-slide-to="1"></li>
+      <li data-target="#slideShow" data-slide-to="2"></li>
+    </ul>
 
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="Images/Bundle.jpg" width="900" height="400" />
-        </div>
-        <div class="carousel-item">
-          <img src="Images/Area51Desktop.jpg" width="900" height="400" />
-        </div>
-        <div class="carousel-item">
-          <img src="Images/Keyboard.jpg" width="900" height="400" />
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/Bundle.jpg" width="900" height="400" />
+      </div>
+      <div class="carousel-item">
+        <img src="Images/Area51Desktop.jpg" width="900" height="400" />
+      </div>
+      <div class="carousel-item">
+        <img src="Images/Keyboard.jpg" width="900" height="400" />
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#slideShow" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#slideShow" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+
+  <div id="section1" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+    <div class="row">
+      <div class="col-sm">
+        <div class="container text-center" style="padding-top: 100px;">
+          <div class="toast" data-autohide="false">
+            <div class="toast-header">
+              <strong class="mr-auto text-primary">Welcome!</strong>
+              <small class="text-muted">5 mins ago</small>
+              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            </div>
+            <div class="toast-body">
+              Thank you for visiting my Website! Enjoy your stay!
+            </div>
+          </div>
+          <p class="font-weight-bold display-1">
+            <a data-toggle="tooltip" data-placement="top" title="1st Gaming Holo Projector">Holo Graph</a>
+          </p>
+          <p style="font-size: 30px;">Introducing, the very finest in gaming projectors, Alien Holo Graph</p>
         </div>
       </div>
+      <div class="col-sm"><img src="Images/Hologram.png" width="400" height="400" /></div>
+    </div>
+  </div>
 
-      <a class="carousel-control-prev" href="#slideShow" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#slideShow" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
+  <div id="section2" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+    <div class="row">
+      <div class="col-sm text-left"><img src="Images/projector_1.png" width="400" height="300" /></div>
+      <div class="col-sm text-right"><img src="Images/projector_2.png" width="400" height="300" /></div>
+      <div class="w-100"></div>
+      <div class="col-sm text-center" style="font-size: 30px;"></div>
+      <div class="col-sm text-center border-top-0 border-bottom-0 font-weight-bold"
+        style="border: 1px solid black; font-size: 50px;"><span class="badge badge-dark">Specs</span></div>
+      <div class="col-sm text-center" style="font-size: 30px;"></div>
+      <div class="w-100"></div>
+      <div class="col-sm text-center border-bottom-0 border-left-0" style="border: 1px solid black; font-size: 30px;">
+        Full color, 16.77 million colors</div>
+      <div class="col-sm text-center border-bottom-0 border-right-0 border-left-0 font-weight-bold"
+        style="border: 1px solid black; font-size: 40px;">Color Reproduction</div>
+      <div class="col-sm text-center border-bottom-0 border-right-0" style="border: 1px solid black; font-size: 30px;">
+        Half color, 8.38 million colors</div>
+      <div class="w-100"></div>
+      <div class="col-sm text-center border-bottom-0 border-left-0" style="border: 1px solid black; font-size: 30px;">
+        475Wi</div>
+      <div class="col-sm text-center border-bottom-0 border-right-0 border-left-0 font-weight-bold"
+        style="border: 1px solid black; font-size: 40px;">Brightness</div>
+      <div class="col-sm text-center border-bottom-0 border-right-0 " style="border: 1px solid black; font-size: 30px;">
+        485Wi</div>
+      <div class="w-100"></div>
+      <div class="col-sm text-center border-bottom-0 border-left-0" style="border: 1px solid black; font-size: 30px;">
+        13.7 inches</div>
+      <div class="col-sm text-center border-bottom-0 border-right-0 border-left-0 font-weight-bold"
+        style="border: 1px solid black; font-size: 40px;">Projection Distance</div>
+      <div class="col-sm text-center border-bottom-0 border-right-0" style="border: 1px solid black; font-size: 30px;">
+        23.5 inches</div>
+      <div class="w-100"></div>
+      <div class="col-sm text-center border-bottom-0 border-left-0" style="border: 1px solid black; font-size: 30px;">
+        Front, wall or ceiling-mounted</div>
+      <div class="col-sm text-center border-bottom-0 border-right-0 border-left-0 font-weight-bold"
+        style="border: 1px solid black; font-size: 40px;">Projection Methods</div>
+      <div class="col-sm text-center border-bottom-0 border-right-0" style="border: 1px solid black; font-size: 30px;">
+        Front, wall or ceiling-mounted</div>
+      <div class="w-100"></div>
+      <div class="col-sm text-center border-bottom-0 border-left-0" style="border: 1px solid black; font-size: 30px;">28
+        decibels</div>
+      <div class="col-sm text-center border-bottom-0 border-right-0 border-left-0 font-weight-bold"
+        style="border: 1px solid black; font-size: 40px;">Noise Level</div>
+      <div class="col-sm text-center border-bottom-0 border-right-0" style="border: 1px solid black; font-size: 30px;">
+        35 decibels</div>
     </div>
+  </div>
 
-    <div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
-      <h1>Holo Graph</h1>
-      <p>Introducing, the very finest in gaming projectors, Alien Holo Graph</p>
-    </div>
-    <div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
-      <h1>Section 2</h1>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
-    <div id="section3" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
-      <h1>Section 3</h1>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
-    <div id="section4" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
-      <h1>Section 4</h1>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
-    <div id="section5" class="container-fluid alienBlue" style="padding-top:70px;padding-bottom:70px">
-      <h1>Section 5</h1>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
+  <div id="section3" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
 
-    <!-- <div class="jumbotron text-center">
-      <h1>My First Bootstrap Page</h1>
-      <p>Resize this responsive page to see the effect!</p>
-    </div> -->
-    <!-- Remember Scrollspy -->
-  </body>
+    <div class="alert alert-info">
+      <strong>Info!</strong> Below is information about prices of Alienware products
+    </div>
+    <table class="table table-striped" style="min-width: 150px; font-size: 25px;">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity Sold</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Area 51 Laptop</td>
+          <td>1,099$</td>
+          <td>51,563</td>
+        </tr>
+        <tr>
+          <td>Space Workstation</td>
+          <td>999$</td>
+          <td>35,013</td>
+        </tr>
+        <tr>
+          <td>UFO Desktop</td>
+          <td>1,549$</td>
+          <td>73,456</td>
+        </tr>
+        <tr>
+          <td>Infinity Tablet</td>
+          <td>869$</td>
+          <td>56,513</td>
+        </tr>
+        <tr>
+          <td>Radiation Box</td>
+          <td>1,269$</td>
+          <td>66,952</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="section4" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+    <h1>Information about Holo Graph</h1>
+    <div class="container row">
+      <a href="#demo" class="btn btn-primary" data-toggle="collapse">Year 1</a>
+      <div id="demo" class="collapse">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <a href="#demo" class="btn btn-primary" data-toggle="collapse">Year 2</a>
+      <div id="demo" class="collapse">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <a href="#demo" class="btn btn-primary" data-toggle="collapse">Year 3</a>
+      <div id="demo" class="collapse">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+    </div>
+  </div>
+
+  <div id="section5" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    $(document).ready(function () {
+      $('.toast').toast('show');
+    });
+  </script>
+
+</body>
+
+<footer>
+  <div class="container-fluid alienDarkGrey py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="row py-0">
+            <div class="col-sm-1 hidden-md-down">
+              <i class="fa fa-2x fa-fw fa-phone bg-info"></i>
+            </div>
+            <div class="col-sm-11 text-white">
+              <div>
+                <h4>1-800-111-2222</h4>
+              </div>
+            </div>
+          </div>
+          <div class="row py-0">
+            <div class="col-sm-1 hidden-md-down">
+              <i class="fa fa-2x fa-fw fa-address-card bg-info"></i>
+            </div>
+            <div class="col-sm-11 text-white">
+              <div>
+                <h4>41 West Anderson Ave. New Orleans, LA 70115</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="d-inline-block">
+            <div class="bg-circle-outline d-inline-block" style="background-color:#3b5998">
+              <a href="https://www.facebook.com/"><i class="fa fa-2x fa-fw fa-facebook text-white"></i>
+              </a>
+            </div>
+            <div class="bg-circle-outline d-inline-block" style="background-color:#4099FF">
+              <a href="https://twitter.com/">
+                <i class="fa fa-2x fa-fw fa-twitter text-white"></i></a>
+            </div>
+
+            <div class="bg-circle-outline d-inline-block" style="background-color:#0077B5">
+              <a href="https://www.linkedin.com/">
+                <i class="fa fa-2x fa-fw fa-linkedin text-white"></i></a>
+            </div>
+            <div class="bg-circle-outline d-inline-block" style="background-color:#d34836">
+              <a href="https://www.google.com/">
+                <i class="fa fa-2x fa-fw fa-google text-white"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
